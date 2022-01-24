@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>News Today - Register</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                News Today
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login">Log in</a></li>
+                <li><a href="register.html" class="signup">Sign up</a></li>
+            </ul>
+        </header>
+
+        <content class="m-clayout">
+            <div class="tengah mt-5">
+                <div class="card item-center">
+                    <div class="card-body">
+                        <h3>Register</h3>
+                        <table class="card-body">
+                            <tr>
+                                <td><p class="text-left">Nama Lengkap</p></td>
+                                <td><input type="text" name="NamaLengkap" id="namalengkap" required></td>
+                            </tr>
+                            <tr>
+                                <td><p class="text-left">Username</p></td>
+                                <td><input type="text" name="username" id="username" required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><p class="text-left">Password</p></td>
+                                <td><input type="Password" name="password" id="password"  required></td>
+                            </tr>
+                            <tr>
+                                <td><p class="text-left">Email</p></td>
+                                <td><input type="email" name="email" id="email"  required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><p class="text-left">Umur</p></td>
+                                <td><input type="number" name="umur" id="umur"  required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><p class="text-left">Alamat</p></td>
+                                <td><input type="text" name="alamat" id="alamat"  required></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button class="btn-login" onclick="klikRegister()">Register</button>
+            </div>
+        </content>
+
+        <footer class="position-bottom w-100">
+            <h4>Dinar Amalia Khansa - 2021</h4>
+        </footer>
+
+        <script>
+            function klikRegister(){
+                var namalengkap = document.getElementById('namalengkap').value;
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var email = document.getElementById('email').value;
+                var umur = document.getElementById('umur').value;
+                var alamat = document.getElementById('alamat').value;
+                
+                
+                if (namalengkap == '' || username == '' || password == '' || email == '' || umur == '' || alamat == '') {
+                    alert('Form harus lengkap');
+                } else {document
+                    alert('Registrasi berhasil, hai ' + "" + namalengkap);
+                }
+            }
+        </script>
+    </body>
+</html>
